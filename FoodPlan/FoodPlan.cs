@@ -1,4 +1,6 @@
-﻿namespace FoodPlan
+﻿using System.Data.SqlClient;
+
+namespace FoodPlan
 {
     public class FoodPlan
     {
@@ -30,6 +32,28 @@
         public void AddMeal(Meal meal)
         {
             Meals.Add(meal);
+        }
+
+        public static void Injection()
+        {
+            string userInput = "'; DROP TABLE Users; --"; // malicious input example
+
+            string connectionString = "YourConnectionStringHere";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                // Vulnerable to SQL Injection because userInput is concatenated directly
+                string query = "SELECT * FROM Users WHERE Username = '" + userInput + "'";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                var reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Console.WriteLine(reader["Username"]);
+                }
+            }
         }
 
         public void RemoveMealByName(string name)
