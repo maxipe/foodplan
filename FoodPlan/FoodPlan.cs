@@ -2,6 +2,7 @@
 {
     public class FoodPlan
     {
+        public static string AzurePassword = "ASdasnonfjoasnfo123123!";
         public bool Active { get; set; }
 
         public IList<Meal> Meals { get; set; }
