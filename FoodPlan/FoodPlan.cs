@@ -36,14 +36,14 @@ namespace FoodPlan
 
         public static void Injection()
         {
-            string userInput = "'; DROP TABLE Users; --"; // malicious input example
+            string userInput = Console.ReadLine();
 
             string connectionString = "YourConnectionStringHere";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
 
-                // Vulnerable to SQL Injection because userInput is concatenated directly
+                // Vulnerable to SQL Injection due to direct concatenation of user input
                 string query = "SELECT * FROM Users WHERE Username = '" + userInput + "'";
 
                 SqlCommand command = new SqlCommand(query, connection);
@@ -51,7 +51,7 @@ namespace FoodPlan
 
                 while (reader.Read())
                 {
-                    Console.WriteLine(reader["Username"]);
+                    Console.WriteLine("User found: " + reader["Username"]);
                 }
             }
         }
