@@ -1,0 +1,11 @@
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\bin\Debug\net8.0\FoodPlan.deps.json
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\bin\Debug\net8.0\FoodPlan.dll
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\bin\Debug\net8.0\FoodPlan.pdb
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\obj\Debug\net8.0\FoodPlan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\obj\Debug\net8.0\FoodPlan.AssemblyInfoInputs.cache
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\obj\Debug\net8.0\FoodPlan.AssemblyInfo.cs
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\obj\Debug\net8.0\FoodPlan.csproj.CoreCompileInputs.cache
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\obj\Debug\net8.0\FoodPlan.dll
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\obj\Debug\net8.0\refint\FoodPlan.dll
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\obj\Debug\net8.0\FoodPlan.pdb
+C:\Users\Maximiliano\source\repos\FoodPlan\FoodPlan\obj\Debug\net8.0\ref\FoodPlan.dll
