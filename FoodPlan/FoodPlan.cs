@@ -4,6 +4,7 @@ namespace FoodPlan
 {
     public class FoodPlan
     {
+        public static string AzurePassword = "Password-Super-Segura-Para-Leer-Todos-Los-Datos-Productivos!";
         public bool Active { get; set; }
 
         public IList<Meal> Meals { get; set; }
